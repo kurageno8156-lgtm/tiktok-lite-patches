@@ -1,3 +1,9 @@
+## [1.0.0-dev.2](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* update patches-bundle.json with download URL ([67bd52b](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/67bd52bd564897099b584f15e566d8e7c108c0fc))
+
 ## 1.0.0-dev.1 (2026-10-12)
 
 ### 🐛 Bug Fixes
