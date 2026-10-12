@@ -1,7 +1,33 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.1.0",
+  "version": "1.2.0-dev.1",
   "patches": [
+    {
+      "name": "Enable Auto Scroll",
+      "description": "TikTok Liteの自動スクロール機能を有効にします",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.ss.android.ugc.tiktok.lite",
+          "name": null,
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": null,
+          "signatures": null,
+          "targets": [
+            {
+              "version": "43.5.3",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
     {
       "name": "Example Patch",
       "description": "Example patch to start with.",

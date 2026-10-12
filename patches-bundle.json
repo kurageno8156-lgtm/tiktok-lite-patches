@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-12T07:49:51",
-  "description": "## [1.1.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.0.0...v1.1.0) (2026-10-12)\n\n### 🐛 Bug Fixes\n\n* change compatible package to com.ss.android.ugc.tiktok.lite ([f497a00](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/f497a00b1cc2c8778a2c32a9996ffc84aadadd7c))\n* use correct Morphe API ([edb8837](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/edb883729a758f1d456c4efb69dde9a1e2abf415))\n* use correct Morphe API ([1414c66](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/1414c668ac792eb173172636b43535363b0e6c31))\n\n### ✨ New Features\n\n* add TikTok Lite splash ad removal patch ([2df1c86](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/2df1c867e0ef9f02681173a2d8d44fa4c3a3bd85))\n* add TikTok Lite splash ad removal patch ([04905f1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/04905f10c2e05252678da21d9d126f8684e32cf7))",
-  "download_url": "https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/download/v1.1.0/patches-1.1.0.mpp",
+  "created_at": "2026-10-12T08:15:31",
+  "description": "## [1.2.0-dev.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-10-12)\n\n### 🐛 Bug Fixes\n\n* add both SplashAd and AutoScroll fingerprints ([3453c1c](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/3453c1cdb47cfd41c056c9a0e9696812d51f6b5c))\n\n### ✨ New Features\n\n* add auto scroll enable patch ([d9ffb80](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/d9ffb80015fb784c5268623b1f3b722060f25250))",
+  "download_url": "https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/download/v1.2.0-dev.1/patches-1.2.0-dev.1.mpp",
   "signature_download_url": "",
-  "version": "1.1.0"
+  "version": "1.2.0-dev.1"
 }

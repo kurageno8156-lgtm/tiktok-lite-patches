@@ -1,3 +1,13 @@
+## [1.2.0-dev.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* add both SplashAd and AutoScroll fingerprints ([3453c1c](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/3453c1cdb47cfd41c056c9a0e9696812d51f6b5c))
+
+### ✨ New Features
+
+* add auto scroll enable patch ([d9ffb80](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/d9ffb80015fb784c5268623b1f3b722060f25250))
+
 ## [1.1.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.0.0...v1.1.0) (2026-10-12)
 
 ### 🐛 Bug Fixes

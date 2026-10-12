@@ -15,7 +15,23 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/tag/v1.1.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+> **[v1.2.0-dev.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/tag/v1.2.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
+<details open>
+<summary>📦 com.ss.android.ugc.tiktok.lite&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 43.5.3 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Enable Auto Scroll](#enable-auto-scroll) | TikTok Liteの自動スクロール機能を有効にします |  |
+| [Remove Splash Ads](#remove-splash-ads) | TikTok Liteのスプラッシュ広告を削除します |  |
+
+</details>
+
 <details open>
 <summary>📦 XYZ app&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
@@ -28,21 +44,6 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Example Patch](#example-patch) | Example patch to start with. |  |
-
-</details>
-
-<details open>
-<summary>📦 com.ss.android.ugc.tiktok.lite&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
-<br>
-
-**🎯 Supported versions:**
-
-| 43.5.3 |
-| :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Remove Splash Ads](#remove-splash-ads) | TikTok Liteのスプラッシュ広告を削除します |  |
 
 </details>
 
