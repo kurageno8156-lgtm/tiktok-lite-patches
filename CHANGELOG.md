@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.0...v1.2.1) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* adjust bytecodePatch options and null safety for auto scroll ([b277b81](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/b277b813ee7ffb2daed59e7ee98076d7414f385d))
+* force patches-bundle.json to point to v1.2.0-dev.3 and include auto scroll options ([5ebad31](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/5ebad31b7a0c4546adb1582ac19488420fdb2401))
+
 ## [1.2.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.1.0...v1.2.0) (2026-10-12)
 
 ### 🐛 Bug Fixes
