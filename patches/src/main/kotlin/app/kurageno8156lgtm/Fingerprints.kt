@@ -13,7 +13,7 @@ object SplashAdFingerprint : Fingerprint(
 
 object AutoScrollFingerprint : Fingerprint(
     definingClass = "Lcom/ss/android/ugc/feed/platform/panel/autoscroll/FypAutoScrollServiceImpl;",
-    name = "LIZ",
+    name = "LJII",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
     returnType = "Z",
     parameters = listOf()
