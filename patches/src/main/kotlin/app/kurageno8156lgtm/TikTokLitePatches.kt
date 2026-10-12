@@ -2,7 +2,6 @@
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patcher.patch.booleanOption
 
 @Suppress("unused")
 val removeSplashAdsPatch = bytecodePatch(
@@ -23,28 +22,15 @@ val removeSplashAdsPatch = bytecodePatch(
     }
 }
 
-// オプションの定義（名前やキーを指定）
-val enableAutoScrollOption = booleanOption(
-    key = "enable_auto_scroll",
-    title = "自動スクロールを有効化",
-    description = "TikTok Liteの自動スクロール機能を有効にします",
-    default = true
-)
-
 @Suppress("unused")
 val enableAutoScrollPatch = bytecodePatch(
     name = "Enable Auto Scroll",
-    description = "TikTok Liteの自動スクロール機能を有効/無効化します",
+    description = "TikTok Liteの自動スクロール機能を有効化します",
     default = true
 ) {
     compatibleWith("com.ss.android.ugc.tiktok.lite"("43.5.3"))
 
     execute {
-        // 設定値が false の場合はパッチ処理をスキップ（安全に取得）
-        if (enableAutoScrollOption.value == false) {
-            return@execute
-        }
-
         AutoScrollFingerprint.method.addInstructions(
             0,
             """
