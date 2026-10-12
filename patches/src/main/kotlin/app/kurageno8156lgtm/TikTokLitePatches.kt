@@ -21,3 +21,22 @@ val removeSplashAdsPatch = bytecodePatch(
         )
     }
 }
+
+@Suppress("unused")
+val enableAutoScrollPatch = bytecodePatch(
+    name = "Enable Auto Scroll",
+    description = "TikTok Liteの自動スクロール機能を有効にします",
+    default = false
+) {
+    compatibleWith("com.ss.android.ugc.tiktok.lite"("43.5.3"))
+
+    execute {
+        AutoScrollFingerprint.method.addInstructions(
+            0,
+            """
+                const/4 v0, 0x1
+                return v0
+            """
+        )
+    }
+}
