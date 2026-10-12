@@ -1,3 +1,9 @@
+## [1.2.0-dev.2](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* try LJII getter for auto scroll ([816ff97](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/816ff97acb14117589980bc2e43ee26dd0d24908))
+
 ## [1.2.0-dev.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-10-12)
 
 ### 🐛 Bug Fixes
