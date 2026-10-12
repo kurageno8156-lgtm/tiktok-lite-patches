@@ -9,7 +9,7 @@ val removeSplashAdsPatch = bytecodePatch(
     description = "TikTok Liteのスプラッシュ広告を削除します",
     default = true
 ) {
-    compatibleWith("com.zhiliaoapp.musically.go"("43.5.3"))
+    compatibleWith("com.ss.android.ugc.tiktok.lite"("43.5.3"))
 
     execute {
         SplashAdFingerprint.method.addInstructions(
