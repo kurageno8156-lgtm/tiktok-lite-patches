@@ -1,3 +1,9 @@
+## [1.2.0-dev.3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.0-dev.2...v1.2.0-dev.3) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* switch auto scroll fingerprint from LJII to LJIILL (final) ([133daf3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/133daf37f2de975dcfc0c98b0ef1ad68055849bb))
+
 ## [1.2.0-dev.2](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-10-12)
 
 ### 🐛 Bug Fixes
