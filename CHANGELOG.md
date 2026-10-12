@@ -1,3 +1,15 @@
+## [1.2.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.1.0...v1.2.0) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* add both SplashAd and AutoScroll fingerprints ([3453c1c](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/3453c1cdb47cfd41c056c9a0e9696812d51f6b5c))
+* switch auto scroll fingerprint from LJII to LJIILL (final) ([133daf3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/133daf37f2de975dcfc0c98b0ef1ad68055849bb))
+* try LJII getter for auto scroll ([816ff97](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/816ff97acb14117589980bc2e43ee26dd0d24908))
+
+### ✨ New Features
+
+* add auto scroll enable patch ([d9ffb80](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/d9ffb80015fb784c5268623b1f3b722060f25250))
+
 ## [1.2.0-dev.3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.0-dev.2...v1.2.0-dev.3) (2026-10-12)
 
 ### 🐛 Bug Fixes
