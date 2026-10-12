@@ -1,43 +1,14 @@
-package app.yourname.patches.tiktoklite
+﻿package app.kurageno8156lgtm
 
 import app.morphe.patcher.Fingerprint
-import app.morphe.patcher.opcode
-import app.morphe.patcher.string
-import com.android.tools.smali.dexlib2.AccessFlags
-import com.android.tools.smali.dexlib2.Opcode
+import app.morphe.patcher.methodFingerprint
 
-/**
- * フィンガープリンチE= 「どのメソチE��にパッチを当てるか」�E持E��、E *
- * 作り方:
- * 1. TikTok Lite の APK めEjadx (https://github.com/skylot/jadx) で開く
- * 2. 庁E��・解析�E琁E��拁E��クラスを探ぁE *    (侁E com/ss/android/downloadad, com/bytedance/embedapplog,
- *     google/android/gms/ads などの呼び出し箁E��)
- * 3. 対象メソチE��の特徴(クラス吁E戻り値/含まれる斁E���E/opcode刁Eをここに書ぁE *
- * 公式ドキュメンチE
- * https://github.com/MorpheApp/morphe-patcher/blob/main/docs/2_2_1_fingerprinting.md
- *
- * 注愁E TikTok Lite は難読化が強く、バージョンアチE�Eでクラス名�EメソチE��名が
- * 変わるため、文字�EリチE��ルめEopcode 列など「変わりにくい特徴」で持E��する�Eが鉄剁E��E */
-
-// 侁E 庁E��表示を制御するメソチE��を探すフィンガープリンチE雛形)
-// string() の中身は jadx で実際に確認した文字�Eに置き換えること
-object AdShowFingerprint : Fingerprint(
-    definingClass = ":com/ss/",               // パッケージの一部刁E��部刁E��致
-    returnType = "Z",                          // boolean を返すメソチE��
-    accessFlags = listOf(AccessFlags.PUBLIC),
-    filters = listOf(
-        // 実際のAPK冁E��確認した庁E��関連の斁E���EリチE��ルに置き換える
-        string("show_ads"),
-        opcode(Opcode.RETURN)
-    )
-)
-
-// 侁E イベントログ送信メソチE��を探すフィンガープリンチE雛形)
-object AnalyticsFingerprint : Fingerprint(
-    definingClass = ":com/bytedance/",
-    returnType = "V",                          // void メソチE��
-    filters = listOf(
-        string("event"),
-        opcode(Opcode.RETURN_VOID)
-    )
+object ShouldShowSplashAdFingerprint : Fingerprint(
+    returnType = "Z",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    parameters = listOf(),
+    customFingerprint = { method, _ ->
+        method.definingClass == "Lcom/bytedance/ies/ugc/aweme/commercialize/splash/core/SplashAdServiceImpl;" &&
+        method.name == "LJIILL"
+    }
 )
