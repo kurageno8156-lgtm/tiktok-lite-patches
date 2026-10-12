@@ -1,3 +1,16 @@
+## [1.1.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.0.0...v1.1.0) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* change compatible package to com.ss.android.ugc.tiktok.lite ([f497a00](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/f497a00b1cc2c8778a2c32a9996ffc84aadadd7c))
+* use correct Morphe API ([edb8837](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/edb883729a758f1d456c4efb69dde9a1e2abf415))
+* use correct Morphe API ([1414c66](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/1414c668ac792eb173172636b43535363b0e6c31))
+
+### ✨ New Features
+
+* add TikTok Lite splash ad removal patch ([2df1c86](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/2df1c867e0ef9f02681173a2d8d44fa4c3a3bd85))
+* add TikTok Lite splash ad removal patch ([04905f1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/04905f10c2e05252678da21d9d126f8684e32cf7))
+
 ## [1.0.0-dev.3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-10-12)
 
 ### 🐛 Bug Fixes
