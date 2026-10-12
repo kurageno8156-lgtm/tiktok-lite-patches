@@ -1,14 +1,12 @@
 ﻿package app.kurageno8156lgtm
 
 import app.morphe.patcher.Fingerprint
-import app.morphe.patcher.methodFingerprint
+import com.android.tools.smali.dexlib2.AccessFlags
 
-object ShouldShowSplashAdFingerprint : Fingerprint(
+object SplashAdFingerprint : Fingerprint(
+    definingClass = "Lcom/bytedance/ies/ugc/aweme/commercialize/splash/core/SplashAdServiceImpl;",
+    name = "LJIILL",
+    accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
     returnType = "Z",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    parameters = listOf(),
-    customFingerprint = { method, _ ->
-        method.definingClass == "Lcom/bytedance/ies/ugc/aweme/commercialize/splash/core/SplashAdServiceImpl;" &&
-        method.name == "LJIILL"
-    }
+    parameters = listOf()
 )
