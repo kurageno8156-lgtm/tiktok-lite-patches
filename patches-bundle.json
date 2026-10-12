@@ -1,7 +1,7 @@
 {
-  "created_at": "",
-  "description": "",
-  "download_url": "",
+  "created_at": "2026-10-12T03:53:22",
+  "description": "## 1.0.0-dev.1 (2026-10-12)\n\n### 🐛 Bug Fixes\n\n* restore template files to fix compilation errors ([7a0bc2d](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/7a0bc2d6d214bf0aed95795d20458323bab5fadd))\n\n### ✨ New Features\n\n* add TikTok Lite patches ([ca756c7](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/ca756c740182a8393c8a47ba9c81ed1c22ca9ce6))",
+  "download_url": "https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/download/v1.0.0-dev.1/patches-1.0.0-dev.1.mpp",
   "signature_download_url": "",
-  "version": ""
+  "version": "1.0.0-dev.1"
 }
