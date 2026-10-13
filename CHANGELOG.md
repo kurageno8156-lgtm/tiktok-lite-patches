@@ -1,3 +1,10 @@
+## [1.2.1-dev.3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.1-dev.2...v1.2.1-dev.3) (2026-10-13)
+
+### 🐛 Bug Fixes
+
+* clean up tag state for semantic-release [skip ci] ([f3eb5c1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/f3eb5c133b19a243f0b039b46d8ee227f4484923))
+* update patch source and configuration for v1.2.2 [skip ci] ([62af53c](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/62af53c44fc50e8d2b3fc92b8a12fc62c040633d))
+
 ## [1.2.1-dev.2](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.1-dev.1...v1.2.1-dev.2) (2026-10-13)
 
 ### 🐛 Bug Fixes
