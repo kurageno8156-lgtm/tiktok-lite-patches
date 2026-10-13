@@ -1,3 +1,9 @@
+## [1.2.4-dev.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.3...v1.2.4-dev.1) (2026-10-13)
+
+### 🐛 Bug Fixes
+
+* update bundle download_url to patches.mpp ([6cc975f](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/6cc975f7fcc05d963f50d74cc5a4884ee513ff56))
+
 ## [1.2.1-dev.3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.1-dev.2...v1.2.1-dev.3) (2026-10-13)
 
 ### 🐛 Bug Fixes
