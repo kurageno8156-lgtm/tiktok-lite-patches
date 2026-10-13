@@ -1,3 +1,9 @@
+## [1.2.1-dev.2](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.1-dev.1...v1.2.1-dev.2) (2026-10-13)
+
+### 🐛 Bug Fixes
+
+* remove unsupported booleanOption and stabilize bytecode patches ([3032c07](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/3032c07dff49c225dedbb8776ac6fde024617271))
+
 ## [1.2.1-dev.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.0...v1.2.1-dev.1) (2026-10-12)
 
 ### 🐛 Bug Fixes
