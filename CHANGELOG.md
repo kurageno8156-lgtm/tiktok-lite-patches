@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.3...v1.2.4) (2026-10-13)
+
+### 🐛 Bug Fixes
+
+* add missing name field to patches-bundle.json ([1316654](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/1316654a0cee12fd2d8c9842c4819d887dae3bfc))
+* add patches.json for Morphe Manager compatibility ([53c7903](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/53c7903372cfb51b6895548545a6188acc7e929e))
+
 ## [1.2.1-dev.3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.1-dev.2...v1.2.1-dev.3) (2026-10-13)
 
 ### 🐛 Bug Fixes
