@@ -1,7 +1,7 @@
-{
-  "created_at": "2026-10-13T09:26:53",
-  "description": "## [1.2.1-dev.3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.1-dev.2...v1.2.1-dev.3) (2026-10-13)\n\n### 🐛 Bug Fixes\n\n* clean up tag state for semantic-release [skip ci] ([f3eb5c1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/f3eb5c133b19a243f0b039b46d8ee227f4484923))\n* update patch source and configuration for v1.2.2 [skip ci] ([62af53c](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/62af53c44fc50e8d2b3fc92b8a12fc62c040633d))",
-  "download_url": "https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/download/v1.2.1-dev.3/patches-1.2.1-dev.3.mpp",
-  "signature_download_url": "",
-  "version": "1.2.1-dev.3"
+﻿{
+    "created_at":  "2026-10-13T18:32:37Z",
+    "description":  "## [1.2.1-dev.3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.1-dev.2...v1.2.1-dev.3) (2026-10-13)\n\n### 菅 Bug Fixes\n\n* clean up tag state for semantic-release [skip ci] ([f3eb5c1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/f3eb5c133b19a243f0b039b46d8ee227f4484923))\n* update patch source and configuration for v1.2.2 [skip ci] ([62af53c](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/62af53c44fc50e8d2b3fc92b8a12fc62c040633d))",
+    "download_url":  "https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/download/v1.2.1-dev.3/patches-1.2.1-dev.3.mpp",
+    "signature_download_url":  "",
+    "version":  "1.2.3"
 }
