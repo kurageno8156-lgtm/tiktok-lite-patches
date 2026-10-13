@@ -1,7 +1,8 @@
 ﻿{
-    "download_url":  "https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/download/v1.2.3/patches.mpp",
-    "description":  "TikTok Lite Patches",
-    "signature_download_url":  "",
     "version":  "1.2.3",
-    "created_at":  "2026-10-13T18:34:09Z"
+    "name":  "UserXYZ Patches",
+    "description":  "TikTok Lite Patches",
+    "created_at":  "2026-10-13T18:52:16Z",
+    "signature_download_url":  "",
+    "download_url":  "https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/download/v1.2.3/patches.mpp"
 }
