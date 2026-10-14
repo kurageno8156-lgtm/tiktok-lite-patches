@@ -1,7 +1,20 @@
 ﻿package app.kurageno8156lgtm
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.ApkFileType
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
+
+private val tikTokLiteCompatibility = Compatibility(
+    name = "TikTok Lite",
+    packageName = "com.ss.android.ugc.tiktok.lite",
+    description = "TikTok Lite original APK, version 43.5.3",
+    apkFileType = ApkFileType.APK,
+    targets = listOf(
+        AppTarget(version = "43.5.3")
+    )
+)
 
 @Suppress("unused")
 val removeSplashAdsPatch = bytecodePatch(
@@ -9,7 +22,7 @@ val removeSplashAdsPatch = bytecodePatch(
     description = "TikTok Liteのスプラッシュ広告を削除します",
     default = true
 ) {
-    compatibleWith("com.ss.android.ugc.tiktok.lite"("43.5.3"))
+    compatibleWith(tikTokLiteCompatibility)
 
     execute {
         SplashAdFingerprint.method.addInstructions(
@@ -28,7 +41,7 @@ val enableAutoScrollPatch = bytecodePatch(
     description = "TikTok Liteの自動スクロール機能を有効化します",
     default = true
 ) {
-    compatibleWith("com.ss.android.ugc.tiktok.lite"("43.5.3"))
+    compatibleWith(tikTokLiteCompatibility)
 
     execute {
         AutoScrollFingerprint.method.addInstructions(
