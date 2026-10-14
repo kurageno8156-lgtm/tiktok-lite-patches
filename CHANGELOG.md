@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.3...v1.2.4) (2026-10-14)
+
+### 🐛 Bug Fixes
+
+* add source name to generated bundle metadata ([3c724f8](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/3c724f8e880f32641103a54b915aaf14473e235b))
+* escape quotes in release metadata command ([3874f67](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/3874f670d105f2ef6179ad30143ddb41e2c64fd1))
+
 ## [1.2.4](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.3...v1.2.4) (2026-10-13)
 
 ### 🐛 Bug Fixes
