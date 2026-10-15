@@ -19,3 +19,18 @@ object AutoScrollFingerprint : Fingerprint(
     parameters = listOf()
 )
 
+object AutoScrollFeatureGateFingerprint : Fingerprint(
+    definingClass = "Lwyb/g1;",
+    name = "LIZ",
+    returnType = "Z",
+    parameters = emptyList(),
+    strings = listOf("fyp_auto_scroll")
+)
+
+object AutoScrollActionFactoryFingerprint : Fingerprint(
+    definingClass = "LX/0erI;",
+    name = "LJFF",
+    returnType = "LX/0YWg;",
+    parameters = listOf("LX/0YI3;"),
+    strings = listOf("panel_auto_scroll", "auto_scroll")
+)
