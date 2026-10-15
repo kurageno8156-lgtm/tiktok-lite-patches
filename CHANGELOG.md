@@ -5,6 +5,13 @@
 * add generated patch section markers to README ([bbeb31c](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/bbeb31caf10ff95f4452eda6bca7cf57df4ae860))
 * correct patch bundle metadata ([198458e](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/198458e23b13d44c0bde208a86eb1a6953cc233c))
 
+## [1.3.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.3.0...v1.3.1) (2026-10-15)
+
+### 🐛 Bug Fixes
+
+* add generated patch section markers to README ([bbeb31c](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/bbeb31caf10ff95f4452eda6bca7cf57df4ae860))
+* correct patch bundle metadata ([198458e](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/198458e23b13d44c0bde208a86eb1a6953cc233c))
+
 ## [1.3.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.4...v1.3.0) (2026-10-15)
 
 ### ✨ New Features
