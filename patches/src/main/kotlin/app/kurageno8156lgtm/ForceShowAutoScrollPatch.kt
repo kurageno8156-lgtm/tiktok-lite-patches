@@ -3,10 +3,10 @@ package app.kurageno8156lgtm
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.util.indexOfFirstInstructionOrThrow
-import app.morphe.util.indexOfFirstStringInstructionOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
+import com.android.tools.smali.dexlib2.iface.reference.StringReference
 
 @Suppress("unused")
 val forceShowAutoScrollPatch = bytecodePatch(
@@ -29,12 +29,28 @@ val forceShowAutoScrollPatch = bytecodePatch(
         // Override the boolean result of the panel_auto_scroll gate while
         // preserving TikTok Lite's original action factory and action object.
         AutoScrollActionFactoryFingerprint.method.apply {
-            val panelGateStringIndex =
-                indexOfFirstStringInstructionOrThrow("panel_auto_scroll")
-            val panelGateResultIndex = indexOfFirstInstructionOrThrow(
-                panelGateStringIndex + 1,
-                Opcode.MOVE_RESULT
-            )
+            val instructions = implementation?.instructions
+                ?: error("Auto scroll action factory has no implementation")
+
+            val panelGateStringIndex = instructions.indexOfFirst { instruction ->
+                instruction.opcode == Opcode.CONST_STRING &&
+                    (instruction as? ReferenceInstruction)
+                        ?.reference.let { it is StringReference && it.string == "panel_auto_scroll" }
+            }
+            check(panelGateStringIndex >= 0) {
+                "Could not find panel_auto_scroll string in AutoScrollActionFactoryFingerprint"
+            }
+
+            val panelGateResultIndex = instructions
+                .drop(panelGateStringIndex + 1)
+                .indexOfFirst { it.opcode == Opcode.MOVE_RESULT }
+                .let { relativeIndex ->
+                    check(relativeIndex >= 0) {
+                        "Could not find MOVE_RESULT after panel_auto_scroll string"
+                    }
+                    panelGateStringIndex + 1 + relativeIndex
+                }
+
             val panelGateResultRegister =
                 getInstruction<OneRegisterInstruction>(panelGateResultIndex).registerA
 
