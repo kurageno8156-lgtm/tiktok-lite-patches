@@ -1,64 +1,32 @@
-# 👋🧩 Morphe Patches template
+# TikTok Lite Patches
 
-Template repository for Morphe Patches.
+<img src="assets/tiktok-lite-neon-icon.svg" width="180" alt="TikTok Lite neon icon" />
 
-## ❓ About
+Morphe patches for TikTok Lite.
 
-Patches for apps I like.
+## How to use
 
-<!-- TODO: Update this about section with a brief introduction/summary about this repo and what it offers. -->
+Add this source to Morphe: https://morphe.software/add-source?github=kurageno8156-lgtm/tiktok-lite-patches
 
-### How to use these patches
+## Supported app
 
-Click here to add these patches to Morphe: https://morphe.software/add-source?github=kurageno8156-lgtm/tiktok-lite-patches
+- Package: `com.ss.android.ugc.tiktok.lite`
+- Version: `43.5.3`
 
-## 🩹 Patches list
+## Patches
 
-<!-- PATCHES_START EXPANDED -->
-> **[v1.3.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/tag/v1.3.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
-<details open>
-<summary>📦 com.ss.android.ugc.tiktok.lite&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
-<br>
+- **Enable Auto Scroll** — TikTok Liteの自動スクロール機能を有効化します
+- **Force show Auto scroll** — 自動スクロール機能のゲートと表示ゲートを有効化します
+- **Remove Splash Ads** — スプラッシュ広告を削除します
 
-**🎯 Supported versions:**
+## Build
 
-| 43.5.3 |
-| :---: |
+```bash
+./gradlew buildAndroid
+```
 
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Enable Auto Scroll](#enable-auto-scroll) | TikTok Liteの自動スクロール機能を有効化します |  |
-| [Force show Auto scroll](#force-show-auto-scroll) | TikTok Lite 43.5.3の自動スクロール機能ゲートと表示ゲートを強制的に有効化します |  |
-| [Remove Splash Ads](#remove-splash-ads) | TikTok Liteのスプラッシュ広告を削除します |  |
+The built patch bundle is generated under `patches/build/libs/`.
 
-</details>
+## Icon artwork
 
-<details open>
-<summary>📦 XYZ app&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
-<br>
-
-**🎯 Supported versions:**
-
-| 2.0.0 | 1.0.2 |
-| :---: | :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Example Patch](#example-patch) | Example patch to start with. |  |
-
-</details>
-
-<!-- PATCHES_END -->
-
-### 🛠️ Building locally
-
-- Run `./gradlew buildAndroid`
-- The built patches .mpp file is found in `patches/build/libs/patches-*.mpp`
-- Patch the mpp file using [Morphe-Desktop](https://github.com/MorpheApp/morphe-desktop)
-  like any other patch bundle.
-
-See the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation) for more information.
-
-## 📜 License
-
-UserXYZ Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+The repository icon artwork is at [assets/tiktok-lite-neon-icon.svg](assets/tiktok-lite-neon-icon.svg).
