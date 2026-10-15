@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.4...v1.3.0) (2026-10-15)
+
+### ✨ New Features
+
+* publish force show auto scroll patch ([01c5fbf](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/01c5fbf3fd3e49ac2182db9b7ec7c5c9d2807d17))
+
 ## [1.2.4](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.3...v1.2.4) (2026-10-14)
 
 ### 🐛 Bug Fixes
