@@ -15,9 +15,8 @@ Add this source to Morphe: https://morphe.software/add-source?github=kurageno815
 
 ## Patches
 
-- **Enable Auto Scroll** — TikTok Liteの自動スクロール機能を有効化します
-- **Force show Auto scroll** — 自動スクロール機能のゲートと表示ゲートを有効化します
-- **Remove Splash Ads** — スプラッシュ広告を削除します
+<!-- PATCHES_START EXPANDED -->
+<!-- PATCHES_END -->
 
 ## Build
 
