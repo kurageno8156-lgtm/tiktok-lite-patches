@@ -1,3 +1,9 @@
+## [1.4.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.3.1...v1.4.0) (2026-10-16)
+
+### ✨ New Features
+
+* **tiktok-lite:** add QoL patches (seekbar, speed, ads, download, watermark) ([2ba8eb3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/2ba8eb315c9b9f19f91953c2ec1fa331f45e022c))
+
 ## [1.3.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.3.0...v1.3.1) (2026-10-15)
 
 ### 🐛 Bug Fixes
