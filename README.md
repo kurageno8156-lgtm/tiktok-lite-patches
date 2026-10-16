@@ -16,7 +16,7 @@ Add this source to Morphe: https://morphe.software/add-source?github=kurageno815
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.4.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/tag/v1.4.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;13 patches total
+> **[v1.4.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/tag/v1.4.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;13 patches total
 <details open>
 <summary>📦 com.ss.android.ugc.tiktok.lite&nbsp;&nbsp;•&nbsp;&nbsp;12 patches</summary>
 <br>
@@ -32,10 +32,10 @@ Add this source to Morphe: https://morphe.software/add-source?github=kurageno815
 | [Feed Filter & Hide Ads](#feed-filter-hide-ads) | フィード広告・LIVEカード等の判定ゲートを抑制します |  |
 | [Force show Auto scroll](#force-show-auto-scroll) | TikTok Lite 43.5.3の自動スクロール機能ゲートと表示ゲートを強制的に有効化します |  |
 | [Hide Shop / Promo UI](#hide-shop-promo-ui) | ショップ入口などプロモ系UIゲートを無効化します |  |
-| [Playback Speed](#playback-speed) | 再生速度変更を解放し、速度パネル関連ゲートを有効化します |  |
+| [Playback Speed](#playback-speed) | 再生速度メニューを解放し、上限ゲートを緩和します（UIに8倍が出るかは端末・版次第） |  |
 | [Remember Clear Display](#remember-clear-display) | クリア表示状態を次の動画でも維持しやすくします |  |
 | [Remove Splash Ads](#remove-splash-ads) | TikTok Liteのスプラッシュ広告を削除します |  |
-| [Remove Watermark](#remove-watermark) | 保存時のウォーターマーク付与フラグを無効化します |  |
+| [Remove Watermark](#remove-watermark) | 透かし付与フラグを無効化し、透かし無しダウンロード判定を強制します |  |
 | [SIM Spoof / Region Unlock](#sim-spoof-region-unlock) | リージョン制限系のクライアントゲートを緩和します |  |
 | [Settings Hook Stub](#settings-hook-stub) | 設定画面のフック位置を検出するスタブ |  |
 | [Show Seekbar](#show-seekbar) | 動画のシークバーを常時表示し、巻き戻し・早送りしやすくします |  |

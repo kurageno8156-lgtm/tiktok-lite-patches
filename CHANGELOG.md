@@ -1,3 +1,9 @@
+## [1.4.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.4.0...v1.4.1) (2026-10-16)
+
+### 🐛 Bug Fixes
+
+* **tiktok-lite:** strengthen watermark removal and playback speed gates ([ab02730](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/ab0273045bac6e25d9735b7005bd9fb3a2cd7454))
+
 ## [1.4.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.3.1...v1.4.0) (2026-10-16)
 
 ### ✨ New Features

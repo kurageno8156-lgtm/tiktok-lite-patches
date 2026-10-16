@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "patches": [
     {
       "name": "Enable Auto Scroll",
@@ -141,7 +141,7 @@
     },
     {
       "name": "Playback Speed",
-      "description": "再生速度変更を解放し、速度パネル関連ゲートを有効化します",
+      "description": "再生速度メニューを解放し、上限ゲートを緩和します（UIに8倍が出るかは端末・版次第）",
       "default": true,
       "category": null,
       "compatiblePackages": [
@@ -219,7 +219,7 @@
     },
     {
       "name": "Remove Watermark",
-      "description": "保存時のウォーターマーク付与フラグを無効化します",
+      "description": "透かし付与フラグを無効化し、透かし無しダウンロード判定を強制します",
       "default": true,
       "category": null,
       "compatiblePackages": [
