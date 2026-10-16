@@ -1,4 +1,49 @@
-## [1.2.4-dev.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.3...v1.2.4-dev.1) (2026-10-13)
+## [1.4.2](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.4.1...v1.4.2) (2026-10-16)
+
+### 🐛 Bug Fixes
+
+* **tiktok-lite:** use 43.5.3 real strings for watermark and speed ([f9d2f7e](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/f9d2f7eb3abfe355b8cac012529a9a60e2eb779e))
+
+## [1.4.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.4.0...v1.4.1) (2026-10-16)
+
+### 🐛 Bug Fixes
+
+* **tiktok-lite:** strengthen watermark removal and playback speed gates ([ab02730](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/ab0273045bac6e25d9735b7005bd9fb3a2cd7454))
+
+## [1.4.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.3.1...v1.4.0) (2026-10-16)
+
+### ✨ New Features
+
+* **tiktok-lite:** add QoL patches (seekbar, speed, ads, download, watermark) ([2ba8eb3](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/2ba8eb315c9b9f19f91953c2ec1fa331f45e022c))
+
+## [1.3.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.3.0...v1.3.1) (2026-10-15)
+
+### 🐛 Bug Fixes
+
+* add generated patch section markers to README ([bbeb31c](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/bbeb31caf10ff95f4452eda6bca7cf57df4ae860))
+* correct patch bundle metadata ([198458e](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/198458e23b13d44c0bde208a86eb1a6953cc233c))
+
+## [1.3.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.3.0...v1.3.1) (2026-10-15)
+
+### 🐛 Bug Fixes
+
+* add generated patch section markers to README ([bbeb31c](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/bbeb31caf10ff95f4452eda6bca7cf57df4ae860))
+* correct patch bundle metadata ([198458e](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/198458e23b13d44c0bde208a86eb1a6953cc233c))
+
+## [1.3.0](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.4...v1.3.0) (2026-10-15)
+
+### ✨ New Features
+
+* publish force show auto scroll patch ([01c5fbf](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/01c5fbf3fd3e49ac2182db9b7ec7c5c9d2807d17))
+
+## [1.2.4](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.3...v1.2.4) (2026-10-14)
+
+### 🐛 Bug Fixes
+
+* add source name to generated bundle metadata ([3c724f8](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/3c724f8e880f32641103a54b915aaf14473e235b))
+* escape quotes in release metadata command ([3874f67](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/3874f670d105f2ef6179ad30143ddb41e2c64fd1))
+
+## [1.2.4](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.2.3...v1.2.4) (2026-10-13)
 
 ### 🐛 Bug Fixes
 
