@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "patches": [
     {
       "name": "Enable Auto Scroll",
@@ -63,7 +63,7 @@
     },
     {
       "name": "Feed Filter & Hide Ads",
-      "description": "フィード広告・LIVEカード等の判定ゲートを抑制します",
+      "description": "広告・LIVE 判定抑制",
       "default": true,
       "category": null,
       "compatiblePackages": [
@@ -115,7 +115,7 @@
     },
     {
       "name": "Hide Shop / Promo UI",
-      "description": "ショップ入口などプロモ系UIゲートを無効化します",
+      "description": "ショップ入口抑制",
       "default": false,
       "category": null,
       "compatiblePackages": [
@@ -141,7 +141,7 @@
     },
     {
       "name": "Playback Speed",
-      "description": "再生速度メニューを解放し、上限ゲートを緩和します（UIに8倍が出るかは端末・版次第）",
+      "description": "速度メニュー解放。speed_list 等を強制（8倍リスト自体は別途配列改変が必要）",
       "default": true,
       "category": null,
       "compatiblePackages": [
@@ -167,7 +167,7 @@
     },
     {
       "name": "Remember Clear Display",
-      "description": "クリア表示状態を次の動画でも維持しやすくします",
+      "description": "クリア表示の維持補助",
       "default": true,
       "category": null,
       "compatiblePackages": [
@@ -219,7 +219,7 @@
     },
     {
       "name": "Remove Watermark",
-      "description": "透かし付与フラグを無効化し、透かし無しダウンロード判定を強制します",
+      "description": "without_watermark / with_watermark / add_watermark を 43.5.3 実文字列で強制",
       "default": true,
       "category": null,
       "compatiblePackages": [
@@ -245,7 +245,7 @@
     },
     {
       "name": "SIM Spoof / Region Unlock",
-      "description": "リージョン制限系のクライアントゲートを緩和します",
+      "description": "リージョンゲート緩和",
       "default": false,
       "category": null,
       "compatiblePackages": [
@@ -271,7 +271,7 @@
     },
     {
       "name": "Settings Hook Stub",
-      "description": "設定画面のフック位置を検出するスタブ",
+      "description": "設定フック検出スタブ",
       "default": false,
       "category": null,
       "compatiblePackages": [
@@ -297,7 +297,7 @@
     },
     {
       "name": "Show Seekbar",
-      "description": "動画のシークバーを常時表示し、巻き戻し・早送りしやすくします",
+      "description": "シークバー常時表示（43.5.3 実文字列対応）",
       "default": true,
       "category": null,
       "compatiblePackages": [
@@ -323,7 +323,7 @@
     },
     {
       "name": "Unlimited Downloads",
-      "description": "ダウンロード制限フラグを緩和し保存可能にします",
+      "description": "allow_download を強制 true（43.5.3 確認済み文字列）",
       "default": true,
       "category": null,
       "compatiblePackages": [

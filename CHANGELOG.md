@@ -1,3 +1,9 @@
+## [1.4.2](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.4.1...v1.4.2) (2026-10-16)
+
+### 🐛 Bug Fixes
+
+* **tiktok-lite:** use 43.5.3 real strings for watermark and speed ([f9d2f7e](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/commit/f9d2f7eb3abfe355b8cac012529a9a60e2eb779e))
+
 ## [1.4.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/compare/v1.4.0...v1.4.1) (2026-10-16)
 
 ### 🐛 Bug Fixes

@@ -16,7 +16,7 @@ Add this source to Morphe: https://morphe.software/add-source?github=kurageno815
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.4.1](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/tag/v1.4.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;13 patches total
+> **[v1.4.2](https://github.com/kurageno8156-lgtm/tiktok-lite-patches/releases/tag/v1.4.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;13 patches total
 <details open>
 <summary>📦 com.ss.android.ugc.tiktok.lite&nbsp;&nbsp;•&nbsp;&nbsp;12 patches</summary>
 <br>
@@ -29,17 +29,17 @@ Add this source to Morphe: https://morphe.software/add-source?github=kurageno815
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Enable Auto Scroll](#enable-auto-scroll) | TikTok Liteの自動スクロール機能を有効化します |  |
-| [Feed Filter & Hide Ads](#feed-filter-hide-ads) | フィード広告・LIVEカード等の判定ゲートを抑制します |  |
+| [Feed Filter & Hide Ads](#feed-filter-hide-ads) | 広告・LIVE 判定抑制 |  |
 | [Force show Auto scroll](#force-show-auto-scroll) | TikTok Lite 43.5.3の自動スクロール機能ゲートと表示ゲートを強制的に有効化します |  |
-| [Hide Shop / Promo UI](#hide-shop-promo-ui) | ショップ入口などプロモ系UIゲートを無効化します |  |
-| [Playback Speed](#playback-speed) | 再生速度メニューを解放し、上限ゲートを緩和します（UIに8倍が出るかは端末・版次第） |  |
-| [Remember Clear Display](#remember-clear-display) | クリア表示状態を次の動画でも維持しやすくします |  |
+| [Hide Shop / Promo UI](#hide-shop-promo-ui) | ショップ入口抑制 |  |
+| [Playback Speed](#playback-speed) | 速度メニュー解放。speed_list 等を強制（8倍リスト自体は別途配列改変が必要） |  |
+| [Remember Clear Display](#remember-clear-display) | クリア表示の維持補助 |  |
 | [Remove Splash Ads](#remove-splash-ads) | TikTok Liteのスプラッシュ広告を削除します |  |
-| [Remove Watermark](#remove-watermark) | 透かし付与フラグを無効化し、透かし無しダウンロード判定を強制します |  |
-| [SIM Spoof / Region Unlock](#sim-spoof-region-unlock) | リージョン制限系のクライアントゲートを緩和します |  |
-| [Settings Hook Stub](#settings-hook-stub) | 設定画面のフック位置を検出するスタブ |  |
-| [Show Seekbar](#show-seekbar) | 動画のシークバーを常時表示し、巻き戻し・早送りしやすくします |  |
-| [Unlimited Downloads](#unlimited-downloads) | ダウンロード制限フラグを緩和し保存可能にします |  |
+| [Remove Watermark](#remove-watermark) | without_watermark / with_watermark / add_watermark を 43.5.3 実文字列で強制 |  |
+| [SIM Spoof / Region Unlock](#sim-spoof-region-unlock) | リージョンゲート緩和 |  |
+| [Settings Hook Stub](#settings-hook-stub) | 設定フック検出スタブ |  |
+| [Show Seekbar](#show-seekbar) | シークバー常時表示（43.5.3 実文字列対応） |  |
+| [Unlimited Downloads](#unlimited-downloads) | allow_download を強制 true（43.5.3 確認済み文字列） |  |
 
 </details>
 
