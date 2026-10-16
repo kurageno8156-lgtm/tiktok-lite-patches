@@ -1,14 +1,13 @@
 group = "app.template"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
+        name = "TikTok Lite Patches"
+        description = "Morphe patches for TikTok Lite"
+        source = "https://github.com/kurageno8156-lgtm/tiktok-lite-patches"
+        author = "kurageno8156-lgtm"
+        contact = "https://github.com/kurageno8156-lgtm/tiktok-lite-patches/issues"
+        website = "https://github.com/kurageno8156-lgtm/tiktok-lite-patches"
         license = "GPLv3"
     }
 }
