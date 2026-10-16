@@ -26,21 +26,28 @@ val showSeekbarPatch = bytecodePatch(
     execute {
         runCatching { ShouldShowSeekBarFingerprint.method.addInstructions(0, forceTrue()) }
         runCatching { ShouldShowSeekBarAltFingerprint.method.addInstructions(0, forceTrue()) }
-        runCatching { SetSeekBarShowTypeFingerprint.method }
     }
 }
 
 @Suppress("unused")
 val playbackSpeedPatch = bytecodePatch(
     name = "Playback Speed",
-    description = "再生速度変更を解放し、速度パネル関連ゲートを有効化します",
+    description = "再生速度メニューを解放し、上限ゲートを緩和します（UIに8倍が出るかは端末・版次第）",
     default = true
 ) {
     compatibleWith(PKG(VER))
     execute {
         runCatching { PlaybackSpeedEnabledFingerprint.method.addInstructions(0, forceTrue()) }
         runCatching { SpeedPanelGateFingerprint.method.addInstructions(0, forceTrue()) }
-        runCatching { SpeedControlParentFingerprint.method }
+        runCatching {
+            val m = SpeedControlParentFingerprint.method
+            if (m.returnType == "Z") m.addInstructions(0, forceTrue())
+        }
+        runCatching {
+            val m = SpeedControlParentAltFingerprint.method
+            if (m.returnType == "Z") m.addInstructions(0, forceTrue())
+        }
+        runCatching { SpeedLimitFingerprint.method.addInstructions(0, forceTrue()) }
     }
 }
 
@@ -53,7 +60,6 @@ val rememberClearDisplayPatch = bytecodePatch(
     compatibleWith(PKG(VER))
     execute {
         runCatching { ClearModeRememberFingerprint.method.addInstructions(0, forceTrue()) }
-        runCatching { ClearDisplayStateFingerprint.method }
     }
 }
 
@@ -66,7 +72,6 @@ val simSpoofRegionPatch = bytecodePatch(
     compatibleWith(PKG(VER))
     execute {
         runCatching { RegionLockGateFingerprint.method.addInstructions(0, forceTrue()) }
-        runCatching { CountryIsoGateFingerprint.method }
     }
 }
 
@@ -105,6 +110,7 @@ val unlimitedDownloadPatch = bytecodePatch(
     compatibleWith(PKG(VER))
     execute {
         runCatching { DownloadAllowFingerprint.method.addInstructions(0, forceTrue()) }
+        runCatching { DownloadEnableFingerprint.method.addInstructions(0, forceTrue()) }
         runCatching { DownloadRestrictFingerprint.method.addInstructions(0, forceFalse()) }
     }
 }
@@ -112,13 +118,18 @@ val unlimitedDownloadPatch = bytecodePatch(
 @Suppress("unused")
 val removeWatermarkPatch = bytecodePatch(
     name = "Remove Watermark",
-    description = "保存時のウォーターマーク付与フラグを無効化します",
+    description = "透かし付与フラグを無効化し、透かし無しダウンロード判定を強制します",
     default = true
 ) {
     compatibleWith(PKG(VER))
     execute {
-        runCatching { WatermarkEnableFingerprint.method.addInstructions(0, forceFalse()) }
-        runCatching { AclShareWatermarkFingerprint.method.addInstructions(0, forceFalse()) }
+        runCatching { NeedWatermarkFingerprint.method.addInstructions(0, forceFalse()) }
+        runCatching { AddWatermarkFingerprint.method.addInstructions(0, forceFalse()) }
+        runCatching { ShouldAddWatermarkFingerprint.method.addInstructions(0, forceFalse()) }
+        runCatching { WithWatermarkFingerprint.method.addInstructions(0, forceFalse()) }
+        runCatching { WaterMarkFlagFingerprint.method.addInstructions(0, forceFalse()) }
+        runCatching { DownloadWithoutWatermarkFingerprint.method.addInstructions(0, forceTrue()) }
+        runCatching { AclNoWatermarkFingerprint.method.addInstructions(0, forceTrue()) }
     }
 }
 

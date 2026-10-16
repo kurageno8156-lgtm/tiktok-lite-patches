@@ -1,7 +1,6 @@
 ﻿package app.kurageno8156lgtm
 
 import app.morphe.patcher.Fingerprint
-import com.android.tools.smali.dexlib2.AccessFlags
 
 object ShouldShowSeekBarFingerprint : Fingerprint(
     returnType = "Z",
@@ -18,6 +17,10 @@ object SetSeekBarShowTypeFingerprint : Fingerprint(
 )
 
 object SpeedControlParentFingerprint : Fingerprint(
+    strings = listOf("playback_speed")
+)
+
+object SpeedControlParentAltFingerprint : Fingerprint(
     strings = listOf(
         "onStopTrackingTouch, hasTouchMove=",
         "already_shown_edge_speed_guide"
@@ -32,6 +35,11 @@ object PlaybackSpeedEnabledFingerprint : Fingerprint(
 object SpeedPanelGateFingerprint : Fingerprint(
     returnType = "Z",
     strings = listOf("speed_panel", "video_speed")
+)
+
+object SpeedLimitFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("max_speed", "speed_limit", "playback_speed_max")
 )
 
 object ClearDisplayStateFingerprint : Fingerprint(
@@ -73,14 +81,48 @@ object DownloadRestrictFingerprint : Fingerprint(
     strings = listOf("download_restrict", "forbid_download")
 )
 
-object WatermarkEnableFingerprint : Fingerprint(
+object DownloadEnableFingerprint : Fingerprint(
     returnType = "Z",
-    strings = listOf("need_watermark", "add_watermark")
+    strings = listOf("enable_download", "download_enable")
 )
 
-object AclShareWatermarkFingerprint : Fingerprint(
+object AclNoWatermarkFingerprint : Fingerprint(
     returnType = "Z",
-    strings = listOf("should_add_watermark", "watermark")
+    strings = listOf("AclCommonShare")
+)
+
+object NeedWatermarkFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("need_watermark")
+)
+
+object AddWatermarkFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("add_watermark")
+)
+
+object ShouldAddWatermarkFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("should_add_watermark")
+)
+
+object WithWatermarkFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("with_watermark")
+)
+
+object WaterMarkFlagFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("water_mark", "watermark_flag")
+)
+
+object DownloadWithoutWatermarkFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("download_without_watermark", "no_watermark")
+)
+
+object DownloadUrlSelectFingerprint : Fingerprint(
+    strings = listOf("download_addr", "play_addr")
 )
 
 object RegionLockGateFingerprint : Fingerprint(
