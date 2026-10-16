@@ -2,6 +2,7 @@
 
 import app.morphe.patcher.Fingerprint
 
+// Seekbar (43.5.3 で確認済み)
 object ShouldShowSeekBarFingerprint : Fingerprint(
     returnType = "Z",
     strings = listOf("can not show seekbar, state: 1, not in resume")
@@ -9,22 +10,87 @@ object ShouldShowSeekBarFingerprint : Fingerprint(
 
 object ShouldShowSeekBarAltFingerprint : Fingerprint(
     returnType = "Z",
+    strings = listOf("can not show seekbar, state: 10, video is prohibited")
+)
+
+// Speed — 43.5.3 実文字列
+object SpeedListFingerprint : Fingerprint(
+    strings = listOf("speed_list")
+)
+
+object SpeedPanelFingerprint : Fingerprint(
+    strings = listOf("speed_panel")
+)
+
+object SpeedNormalPanelFingerprint : Fingerprint(
+    strings = listOf("speed_normal_panel")
+)
+
+object VideoSpeedShowFingerprint : Fingerprint(
+    strings = listOf("video_speed_show")
+)
+
+object PlaybackSpeedGuideFingerprint : Fingerprint(
+    strings = listOf("playback_speed_guide_toast")
+)
+
+object PlayerSpeedFingerprint : Fingerprint(
+    strings = listOf("playerSpeed")
+)
+
+object ChangeVideoSpeedFingerprint : Fingerprint(
+    strings = listOf("change_video_speed")
+)
+
+object ClickVideoSpeedFingerprint : Fingerprint(
+    strings = listOf("click_video_speed")
+)
+
+// Download / watermark — 43.5.3 実文字列
+object AllowDownloadFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("allow_download")
+)
+
+object WithoutWatermarkFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("without_watermark")
+)
+
+object WithWatermarkFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("with_watermark")
+)
+
+object AddWatermarkFingerprint : Fingerprint(
+    returnType = "Z",
+    strings = listOf("add_watermark")
+)
+
+object SaveWithoutWatermarkFingerprint : Fingerprint(
+    strings = listOf("click_save_without_watermark")
+)
+
+object SaveWithWatermarkFingerprint : Fingerprint(
+    strings = listOf("click_save_with_watermark")
+)
+
+object CheckSaveLocalWithoutWmFingerprint : Fingerprint(
+    strings = listOf("check_save_local_without_watermark")
+)
+
+object DownloadAddrFingerprint : Fingerprint(
+    strings = listOf("download_addr")
+)
+
+object PlayAddrFingerprint : Fingerprint(
+    strings = listOf("play_addr")
+)
+
+// 既存 QoL 用の互換エイリアス（古いパッチ参照が残っても落ちないように）
+object ShouldShowSeekBarAltFingerprint2 : Fingerprint(
+    returnType = "Z",
     strings = listOf("can not show seekbar")
-)
-
-object SetSeekBarShowTypeFingerprint : Fingerprint(
-    strings = listOf("setSeekBarShowType")
-)
-
-object SpeedControlParentFingerprint : Fingerprint(
-    strings = listOf("playback_speed")
-)
-
-object SpeedControlParentAltFingerprint : Fingerprint(
-    strings = listOf(
-        "onStopTrackingTouch, hasTouchMove=",
-        "already_shown_edge_speed_guide"
-    )
 )
 
 object PlaybackSpeedEnabledFingerprint : Fingerprint(
@@ -37,9 +103,17 @@ object SpeedPanelGateFingerprint : Fingerprint(
     strings = listOf("speed_panel", "video_speed")
 )
 
+object SpeedControlParentFingerprint : Fingerprint(
+    strings = listOf("playback_speed")
+)
+
+object SpeedControlParentAltFingerprint : Fingerprint(
+    strings = listOf("video_speed_show")
+)
+
 object SpeedLimitFingerprint : Fingerprint(
     returnType = "Z",
-    strings = listOf("max_speed", "speed_limit", "playback_speed_max")
+    strings = listOf("speed_list")
 )
 
 object ClearDisplayStateFingerprint : Fingerprint(
@@ -73,7 +147,7 @@ object ShopEntryGateFingerprint : Fingerprint(
 
 object DownloadAllowFingerprint : Fingerprint(
     returnType = "Z",
-    strings = listOf("allow_download", "can_download")
+    strings = listOf("allow_download")
 )
 
 object DownloadRestrictFingerprint : Fingerprint(
@@ -88,7 +162,7 @@ object DownloadEnableFingerprint : Fingerprint(
 
 object AclNoWatermarkFingerprint : Fingerprint(
     returnType = "Z",
-    strings = listOf("AclCommonShare")
+    strings = listOf("without_watermark")
 )
 
 object NeedWatermarkFingerprint : Fingerprint(
@@ -96,29 +170,19 @@ object NeedWatermarkFingerprint : Fingerprint(
     strings = listOf("need_watermark")
 )
 
-object AddWatermarkFingerprint : Fingerprint(
+object ShouldAddWatermarkFingerprint : Fingerprint(
     returnType = "Z",
     strings = listOf("add_watermark")
 )
 
-object ShouldAddWatermarkFingerprint : Fingerprint(
-    returnType = "Z",
-    strings = listOf("should_add_watermark")
-)
-
-object WithWatermarkFingerprint : Fingerprint(
-    returnType = "Z",
-    strings = listOf("with_watermark")
-)
-
 object WaterMarkFlagFingerprint : Fingerprint(
     returnType = "Z",
-    strings = listOf("water_mark", "watermark_flag")
+    strings = listOf("water_mark")
 )
 
 object DownloadWithoutWatermarkFingerprint : Fingerprint(
     returnType = "Z",
-    strings = listOf("download_without_watermark", "no_watermark")
+    strings = listOf("without_watermark")
 )
 
 object DownloadUrlSelectFingerprint : Fingerprint(
@@ -136,4 +200,8 @@ object CountryIsoGateFingerprint : Fingerprint(
 
 object SettingsFragmentFingerprint : Fingerprint(
     strings = listOf("settings_fragment", "SettingFragment")
+)
+
+object SetSeekBarShowTypeFingerprint : Fingerprint(
+    strings = listOf("setSeekBarShowType")
 )
